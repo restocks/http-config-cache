@@ -3,9 +3,9 @@ Caches JSON configs. Meant for long running processes with configs that update m
 
 ## Installation 
 
-**`http-config-cache` requires ES6**. make sure your [version of node](http://node.green) supports it! 
+**`http-config-cache` requires ES6**. make sure your [version of node](http://node.green) supports it! Once you have that, simply run:
 
-`yarn install http-config-cache`
+`yarn add http-config-cache`
 
 or 
 
