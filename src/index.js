@@ -45,7 +45,7 @@ module.exports = (url, time, ignoreCache) => {
         if (typeof time === 'number') {
           cacheConfig.ttl = time;
         } else {
-          cacheConfig.ttl = 10000;
+          cacheConfig.ttl = 600000;
         }
 
         cache.put(url, cacheObject, cacheConfig);
