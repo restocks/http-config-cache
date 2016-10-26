@@ -20,8 +20,9 @@ Really simple. Simply include the module and pass it a URL to some JSON. It will
 
 ```js
 const configCache = require('http-config-cache');
+const configUrl = 'https://raw.githubusercontent.com/Restocks/http-config-cache/master/static/test.json';
 
-configCache('http://cdn.restocks.io/test.json').then((data) => {
+configCache(configUrl).then((data) => {
   console.log(data);
 }).catch((err) => {
   console.log(err);
@@ -34,7 +35,7 @@ By default all objects expire every 10 minutes before they're fetched again. You
 
 ```js
 // 5 second expiry
-configCache('http://cdn.restocks.io/test.json', 5000).then((data) => {
+configCache(configUrl, 5000).then((data) => {
   console.log(data);
 }).catch((err) => {
   console.log(err);
@@ -47,7 +48,7 @@ There's also another option to force a network request and ignore the cache enti
 
 ```js
 // 5 second expiry
-configCache('http://cdn.restocks.io/test.json', null, true).then((data) => {
+configCache(configUrl, null, true).then((data) => {
   console.log(data);
 }).catch((err) => {
   console.log(err);
