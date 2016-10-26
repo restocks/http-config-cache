@@ -1,0 +1,30 @@
+{
+  "name": "http-config-cache",
+  "version": "1.0.0",
+  "description": "Cache a remote config! Supports JSON.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --timeout 25000",
+    "lint": "./node_modules/.bin/eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Restocks/http-config-cache.git"
+  },
+  "author": "Restocks, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Restocks/http-config-cache/issues"
+  },
+  "homepage": "https://github.com/Restocks/http-config-cache#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "request": "^2.76.0"
+  }
+}
