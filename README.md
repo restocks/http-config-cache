@@ -47,7 +47,6 @@ configCache(configUrl, 5000).then((data) => {
 There's also another option to force a network request and ignore the cache entirely. Here's an example of doing that while respecting the standard cache interval.
 
 ```js
-// 5 second expiry
 configCache(configUrl, null, true).then((data) => {
   console.log(data);
 }).catch((err) => {
