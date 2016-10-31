@@ -1,6 +1,6 @@
 {
   "name": "http-config-cache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cache a remote config! Supports JSON.",
   "main": "src/index.js",
   "scripts": {
